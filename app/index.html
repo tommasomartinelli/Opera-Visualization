@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Opera Network Visualization</title>
+    <!--  Bootstrap & JQuery  -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="cdn/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <!--  Bootstrap Autocomplete  -->
+    <script src="cdn/arbor.js"></script>
+    <script src="cdn/graphics.js"></script>
+    <script src="cdn/renderer.js"></script>
+    <script src="cdn/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="row m-md-2">
+    <h1>Opera Network Visualization</h1>
+    <h3>by Gianluca Coletta & Tommaso Martinelli</h3>
+
+    <div class="m-md-2">
+        <canvas id="viewport" width="1200" height="500"></canvas>
+    </div>
+    <div class="col  m-md-2">
+        <br><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select query
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" id="libC">Librettist and compositor</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
