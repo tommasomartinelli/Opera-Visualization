@@ -170,9 +170,6 @@ $("#infop").click(async function () {
 
         edges.splice(0, edges.length)
 
-        console.log(result.records[0])
-        console.log(result.records[1])
-
         name1 = result.records[0].get(0).properties.title;
         var n1 = sys.addNode(name1, { 'color': 'green', 'shape': 'dot', 'label': name1 });
         nodes.push(n1);
